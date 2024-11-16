@@ -8,11 +8,7 @@ fetch('https://www.blagues-api.fr/api/random', {
   .then(data => {
     console.log(data)
 
-
     function createJoke() {
-
-
-
 
       let jokeType = data.type;
       let jokeTitle = data.joke;
@@ -27,10 +23,7 @@ fetch('https://www.blagues-api.fr/api/random', {
       let p3 = document.getElementById("answer");
       p3.innerHTML = jokeAnswer;
 
-
-
     }
-
 
     createJoke()
 
